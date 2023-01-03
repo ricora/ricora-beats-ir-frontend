@@ -27,6 +27,7 @@
   <div class="flex-1">
     <a class="btn btn-ghost normal-case text-xl" href="#/">RICORA Beats IR</a>
   </div>
+  <!--
   <div class="flex-none">
     <div class="dropdown dropdown-end">
       <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -57,4 +58,5 @@
       </ul>
     </div>
   </div>
+  -->
 </div>
