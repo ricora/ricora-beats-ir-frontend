@@ -3,6 +3,8 @@
 
   export let params
 
+  const SERVER_URL = process.env.SERVER_URL as string
+
   let selectedMusic
   let selectedBeatmap
 
@@ -35,7 +37,9 @@
   })()
 
   const fetchUsers = (async () => {
-    const response = await fetch(`https://ricora-beats-ir.fly.dev/users/`)
+    const response = await fetch(
+      new URL("/users/", SERVER_URL).toString()
+    )
     const responseJSON = await response.json()
     users = responseJSON
     for (const user of users) {
@@ -46,9 +50,12 @@
 
   const fetchRanking = async (folder, filename) => {
     const response = await fetch(
-      `https://ricora-beats-ir.fly.dev/scores/${encodeURIComponent(
-        folder
-      )}/${encodeURIComponent(filename)}/`
+      new URL(
+        `/scores/${encodeURIComponent(folder)}/${encodeURIComponent(
+          filename
+        )}/`,
+        SERVER_URL
+      ).toString()
     )
     const responseJSON = await response.json()
     return responseJSON

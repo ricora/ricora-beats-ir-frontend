@@ -4,6 +4,8 @@
 
   export let params
 
+  const SERVER_URL = process.env.SERVER_URL as string
+
   let user
   let scores = []
 
@@ -51,7 +53,7 @@
 
   const fetchUser = (async (userId: number) => {
     const response = await fetch(
-      `https://ricora-beats-ir.fly.dev/users/${userId}`
+      new URL(`/users/${userId}`, SERVER_URL).toString()
     )
     user = await response.json()
     if (!response.ok) {

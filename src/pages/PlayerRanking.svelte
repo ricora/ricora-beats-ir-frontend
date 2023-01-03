@@ -1,9 +1,10 @@
 <script lang="ts">
   import { getNameColor } from "../lib/nameColor"
-  let i = 0
+
+  const SERVER_URL = process.env.SERVER_URL as string
 
   const fetchUsers = (async () => {
-    const response = await fetch(`https://ricora-beats-ir.fly.dev/users/`)
+    const response = await fetch(new URL("/users/", SERVER_URL).toString())
     const ranking = await response.json()
     ranking.sort((a, b) => b.performance_point - a.performance_point)
     return ranking
