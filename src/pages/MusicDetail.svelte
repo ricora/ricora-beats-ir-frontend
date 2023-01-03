@@ -85,7 +85,7 @@
             src={encodeURIComponent(
               `./beatmaps/${music.folder}/${music.jacket}`
             )}
-            class="sm:max-w-sm rounded-lg shadow-2xl"
+            class="sm:max-w-sm rounded-lg shadow-2xl w-72"
             alt={music.title}
           />
           <div>
