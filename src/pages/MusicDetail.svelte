@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { getNameColor } from "../lib/nameColor"
+
   export let params
 
   let selectedMusic
@@ -6,6 +8,7 @@
 
   let users
   let playerIdToScreenName = {}
+  let playerIdToPerformancePoint = {}
 
   let ranking = []
 
@@ -36,6 +39,7 @@
     users = responseJSON
     for (const user of users) {
       playerIdToScreenName[user.id] = user.screen_name
+      playerIdToPerformancePoint[user.id] = user.performance_point
     }
   })()
 
@@ -168,7 +172,12 @@
               <td>
                 <div class="flex items-center space-x-3">
                   <div>
-                    <div class="font-bold">
+                    <div
+                      class="font-bold"
+                      style="color: {getNameColor(
+                        playerIdToPerformancePoint[score.player_id]
+                      )};"
+                    >
                       {playerIdToScreenName[score.player_id]}
                     </div>
                     <div class="text-sm opacity-50">ID: {score.player_id}</div>
@@ -176,9 +185,9 @@
                 </div>
               </td>
               <td>
-                <div class="font-bold">{score.score.toFixed(2)}%</div>
+                <div class="font-bold">{score.score.toFixed(2)} %</div>
               </td>
-              <td class="text-xs">{score.combo}</td>
+              <td class="text-xs">{score.combo} combo</td>
               <td class="text-xs">{score.judge_0}</td>
               <td class="text-xs">{score.judge_1}</td>
               <td class="text-xs">{score.judge_2}</td>
