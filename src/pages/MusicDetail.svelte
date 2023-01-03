@@ -177,8 +177,7 @@
                       style="color: {getNameColor(
                         playerIdToPerformancePoint[score.player_id]
                       )};"
-                    >
-                      {playerIdToScreenName[score.player_id]}
+                    ><a href="#/users/{score.player_id}">{playerIdToScreenName[score.player_id]}</a>
                     </div>
                     <div class="text-sm opacity-50">ID: {score.player_id}</div>
                   </div>

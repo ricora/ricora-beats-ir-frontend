@@ -43,7 +43,7 @@
                       class="font-bold"
                       style="color: {getNameColor(user.performance_point)};"
                     >
-                      {user.screen_name}
+                      <a href="#/users/{user.id}">{user.screen_name}</a>
                     </div>
                     <div class="text-sm opacity-50">ID: {user.id}</div>
                   </div>
