@@ -143,8 +143,10 @@
                 <div class="flex items-center space-x-3">
                   <div>
                     <div class="font-bold">
-                      {fileNameToDifficulty[score.folder][score.filename].music
-                        .title}
+                      <a href="#/music/{encodeURIComponent(score.folder)}/">
+                        {fileNameToDifficulty[score.folder][score.filename]
+                          .music.title}</a
+                      >
                     </div>
                     <div class="text-sm opacity-50">
                       {fileNameToDifficulty[score.folder][score.filename].key} KEYS
