@@ -2,7 +2,9 @@ import svelte from "rollup-plugin-svelte"
 import commonjs from "@rollup/plugin-commonjs"
 import resolve from "@rollup/plugin-node-resolve"
 import livereload from "rollup-plugin-livereload"
-import { terser } from "rollup-plugin-terser"
+import {
+  terser
+} from "rollup-plugin-terser"
 import sveltePreprocess from "svelte-preprocess"
 import typescript from "@rollup/plugin-typescript"
 import postcss from "rollup-plugin-postcss"
@@ -21,8 +23,7 @@ function serve() {
       if (server) return
       server = require("child_process").spawn(
         "npm",
-        ["run", "start", "--", "--dev"],
-        {
+        ["run", "start", "--", "--dev"], {
           stdio: ["ignore", "inherit", "inherit"],
           shell: true,
         }
@@ -46,6 +47,9 @@ export default {
     svelte({
       preprocess: sveltePreprocess({
         sourceMap: !production,
+        replace: [
+          ['process.env.SERVER_URL', JSON.stringify(process.env.SERVER_URL)]
+        ]
       }),
       compilerOptions: {
         // enable run-time checks when not in production
