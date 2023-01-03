@@ -25,6 +25,12 @@
             >RICORA Beatsのプレーはこちらから</button
           ></a
         >
+        <a
+          href="https://github.com/RICORA/ricora-beats/wiki"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><button class="btn btn-neutral">RICORA Beatsとは？</button></a
+        >
       </div>
     </div>
   </div>
