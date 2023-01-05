@@ -2,20 +2,8 @@
   class="footer footer-center p-10 bg-neutral text-neutral-content rounded"
 >
   <div>
-    <span class="footer-title">Links</span>
+    <span class="footer-title">Sitemaps</span>
     <a href="#/" class="link link-hover">Home</a>
-    <a
-      href="https://github.com/RICORA/ricora-beats/wiki"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="link link-hover">RICORA Beatsについて</a
-    >
-    <a
-      href="https://beats.tus-ricora.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="link link-hover">RICORA Beatsを遊ぶ</a
-    >
     <a href="#/music" class="link link-hover">楽曲一覧</a>
     <a href="#/ranking" class="link link-hover">総合ランキング</a>
   </div>
