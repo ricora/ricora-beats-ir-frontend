@@ -30,16 +30,20 @@
     for (const music of responseJSON) {
       if (music.folder == params.folder) {
         selectedMusic = music
-        return music
+        selectedMusic["jacketURL"] = "./assets/img/no_image.png"
+        if ("jacket" in selectedMusic) {
+          selectedMusic.jacketURL = encodeURIComponent(
+            `./beatmaps/${music.folder}/${music.jacket}`
+          )
+        }
+        return selectedMusic
       }
     }
     return Promise.reject(new Error("Music not found."))
   })()
 
   const fetchUsers = (async () => {
-    const response = await fetch(
-      new URL("/users/", SERVER_URL).toString()
-    )
+    const response = await fetch(new URL("/users/", SERVER_URL).toString())
     const responseJSON = await response.json()
     users = responseJSON
     for (const user of users) {
@@ -82,9 +86,7 @@
       <div class="p-8 hero bg-base-300">
         <div class="hero-content flex-col lg:flex-row">
           <img
-            src={encodeURIComponent(
-              `./beatmaps/${music.folder}/${music.jacket}`
-            )}
+            src={music.jacketURL}
             class="sm:max-w-sm rounded-lg shadow-2xl w-72"
             alt={music.title}
           />

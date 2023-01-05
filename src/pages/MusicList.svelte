@@ -7,6 +7,12 @@
     let row = []
     let col = []
     for (const music of responseJSON) {
+      music["jacketURL"] = "./assets/img/no_image.png"
+      if ("jacket" in music) {
+        music.jacketURL = encodeURIComponent(
+          `./beatmaps/${music.folder}/${music.jacket}`
+        )
+      }
       col.push(music)
       if (col.length == 3) {
         row.push(col)
@@ -38,13 +44,13 @@
   {:then data}
     {#each data as row}
       <div class="lg:flex justify-center">
-        {#each row as { title, artist, noter, folder, jacket }, i}
+        {#each row as { title, artist, noter, folder, jacketURL }, i}
           <div class="flex p-8 justify-center">
             <MusicCard
               {title}
               {artist}
               {noter}
-              imgSrc={encodeURIComponent(`./beatmaps/${folder}/${jacket}`)}
+              imgSrc={jacketURL}
               aHref={`#/music/${encodeURIComponent(folder)}`}
             />
           </div>
