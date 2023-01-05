@@ -102,7 +102,7 @@
               </span>
             </div>
             {#if user.self_introduction}
-              <div class="alert max-w-4xl shadow-lg">
+              <div class="alert max-w-4xl">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
