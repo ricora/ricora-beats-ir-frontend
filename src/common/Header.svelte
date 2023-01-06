@@ -27,6 +27,35 @@
   <div class="flex-1">
     <a class="btn btn-ghost normal-case text-xl" href="#/">RICORA Beats IR</a>
   </div>
+  <div class="navbar-end invisible md:visible">
+    <div class="flex flex-row gap-2">
+      <div>
+        <a href="#/music"><button class="btn btn-neutral">楽曲一覧</button></a>
+      </div>
+      <div>
+        <a href="#/ranking"
+          ><button class="btn btn-neutral">総合ランキング</button></a
+        >
+      </div>
+      <div>
+        <a
+          href="https://beats.tus-ricora.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><button class="btn btn-neutral">RICORA Beatsで遊ぶ</button></a
+        >
+      </div>
+      <div>
+        <a
+          href="https://github.com/RICORA/ricora-beats/wiki"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><button class="btn btn-neutral">Wiki</button></a
+        >
+      </div>
+    </div>
+  </div>
+
   <!--
   <div class="flex-none">
     <div class="dropdown dropdown-end">
@@ -60,3 +89,9 @@
   </div>
   -->
 </div>
+
+<style>
+  button {
+    text-transform: none;
+  }
+</style>
