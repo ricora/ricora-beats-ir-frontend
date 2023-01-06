@@ -1,14 +1,15 @@
-<div class="hero min-h-screen bg-base-200">
+<div class="hero min-h-screen hero-top">
   <div class="hero-content flex-col lg:flex-row">
     <img
       src="https://user-images.githubusercontent.com/52315048/206750919-6f17d01a-fac2-4dfe-96f1-e8021f90ed78.png"
       class="sm:max-w-xs rounded-lg shadow-2xl"
       alt="RICORA Beats"
     />
-    <div>
+    <div class="text-top">
       <h1 class="text-5xl font-bold">RICORA Beats IR</h1>
       <p class="py-6">
-        音楽ゲーム「RICORA Beats」のインターネットランキング閲覧サイトです。
+        Webブラウザからタッチパネルやキーボードで遊ぶ音楽ゲーム「RICORA
+        Beats」とそのインターネットランキングの閲覧サイトです。
       </p>
       <a href="#/music">
         <button class="btn btn-primary">楽曲別ランキング</button></a
@@ -21,8 +22,7 @@
           href="https://beats.tus-ricora.com"
           target="_blank"
           rel="noopener noreferrer"
-          ><button class="btn btn-neutral"
-            >RICORA Beatsのプレーはこちらから</button
+          ><button class="btn btn-neutral">RICORA Beatsのプレーはこちら</button
           ></a
         >
         <a
@@ -59,32 +59,28 @@
           href="https://github.com/RICORA/ricora-beats/"
           target="_blank"
           rel="noopener noreferrer"
-          class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
-          >RICORA Beats</a
+          class="underline hover:no-underline">RICORA Beats</a
         >は<a
           href="https://tus-ricora.com/"
           target="_blank"
           rel="noopener noreferrer"
-          class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
+          class="underline hover:no-underline"
           >東京理科大学 電子計算機研究会RICORA</a
         >の有志部員によって制作された音楽(リズム)ゲームです。より多くの人にプレーしてほしいという思想の元、導入の敷居が低い<a
           href="https://developer.mozilla.org/ja/docs/Web/Progressive_web_apps"
           target="_blank"
           rel="noopener noreferrer"
-          class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
-          >PWA</a
+          class="underline hover:no-underline">PWA</a
         >対応のWebアプリとして開発され、タッチ操作とキーボード操作のどちらでも遊べるマルチプラットフォームアプリとして設計されています。楽曲を<a
           href="https://music.tus-ricora.com/"
           target="_blank"
           rel="noopener noreferrer"
-          class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
-          >音楽班</a
+          class="underline hover:no-underline">音楽班</a
         >が、プログラムを<a
           href="https://alg.tus-ricora.com/"
           target="_blank"
           rel="noopener noreferrer"
-          class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline"
-          >プログラミング班</a
+          class="underline hover:no-underline">プログラミング班</a
         >が主に担当しています。
       </p>
       <a
@@ -129,28 +125,28 @@
               <td>
                 <img
                   src="./assets/img/diff_icon_1.png"
-                  class="px-1"
+                  class="px-1 icon-shadow"
                   alt="BEGINNER"
                 /></td
               >
               <td>
                 <img
                   src="./assets/img/diff_icon_2.png"
-                  class="px-1"
+                  class="px-1 icon-shadow"
                   alt="STANDARD"
                 /></td
               >
               <td>
                 <img
                   src="./assets/img/diff_icon_3.png"
-                  class="px-1"
+                  class="px-1 icon-shadow"
                   alt="ADVANCED"
                 /></td
               >
               <td>
                 <img
                   src="./assets/img/diff_icon_4.png"
-                  class="px-1"
+                  class="px-1 icon-shadow"
                   alt="EXTRA"
                 /></td
               >
@@ -165,28 +161,28 @@
               <td>
                 <img
                   src="./assets/img/key_icon_4.png"
-                  class="px-1"
+                  class="px-1 icon-shadow"
                   alt="4 KEYS"
                 /></td
               >
               <td>
                 <img
                   src="./assets/img/key_icon_5.png"
-                  class="px-1"
+                  class="px-1 icon-shadow"
                   alt="5 KEYS"
                 /></td
               >
               <td>
                 <img
                   src="./assets/img/key_icon_6.png"
-                  class="px-1"
+                  class="px-1 icon-shadow"
                   alt="6 KEYS"
                 /></td
               >
               <td>
                 <img
                   src="./assets/img/key_icon_7.png"
-                  class="px-1"
+                  class="px-1 icon-shadow"
                   alt="7 KEYS"
                 /></td
               >
@@ -216,32 +212,48 @@
 <style>
   button {
     text-transform: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+  }
+
+  .hero-top {
+    background-image: url(./assets/img/demo.gif);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+  }
+
+  .text-top {
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
   }
 
   .text-1 {
-    color: #63343a;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
   }
   .text-2 {
-    color: #344c64;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
   }
   .text-3 {
-    color: #63461c;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
   }
   .btn-1 {
     background-color: #c76874;
     border-color: #c76874;
   }
-  .btn-3 {
-    background-color: #c78d39;
-    border-color: #c78d39;
-  }
+
   .bg-1 {
-    background-color: #fde6e9;
+    background-color: #f98392;
   }
   .bg-2 {
-    background-color: #e6f2fe;
+    background-color: #82bffc;
   }
   .bg-3 {
-    background-color: #fdefda;
+    background-color: #f9b148;
+  }
+
+  .icon-shadow {
+    filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.5));
   }
 </style>
