@@ -94,7 +94,7 @@
               </div>
 
               <span class="py-3">
-                <span class="tooltip" data-tip="Performance Point">
+                <span class="tooltip" data-tip="Performance Points">
                   <span class="badge badge-md"
                     >{user.performance_point} pts.</span
                   >
