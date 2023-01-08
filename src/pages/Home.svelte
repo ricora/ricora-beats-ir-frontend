@@ -87,7 +87,7 @@
         href="https://github.com/RICORA/ricora-beats"
         target="_blank"
         rel="noopener noreferrer"
-        ><button class="btn btn-1"
+        ><button class="btn btn-ghost glass"
           ><div class="grid grid-flow-col gap-2 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +212,7 @@
 <style>
   button {
     text-transform: none;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75) !important;
   }
 
   .hero-top {
@@ -237,10 +237,6 @@
   .text-3 {
     color: #ffffff;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
-  }
-  .btn-1 {
-    background-color: #c76874;
-    border-color: #c76874;
   }
 
   .bg-1 {
