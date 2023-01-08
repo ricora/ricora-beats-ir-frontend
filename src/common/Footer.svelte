@@ -1,5 +1,5 @@
 <footer
-  class="footer footer-center p-10 bg-neutral text-neutral-content rounded"
+  class="footer footer-center p-10 bg-neutral text-neutral-content"
 >
   <div>
     <span class="footer-title">Sitemaps</span>
