@@ -1,6 +1,7 @@
 <script lang="ts">
   import MusicCard from "../components/MusicCard.svelte"
   import { getNameColor } from "../lib/nameColor"
+  import { retryFetch } from "../lib/retryFetch"
 
   export let params
 
@@ -29,7 +30,7 @@
   }
 
   const fetchBeatmap = (async () => {
-    const response = await fetch("./beatmaps/beatmaps.json")
+    const response = await retryFetch("./beatmaps/beatmaps.json")
     const responseJSON = await response.json()
     for (const music of responseJSON) {
       if (!(music.folder in fileNameToDifficulty)) {
@@ -52,7 +53,7 @@
   })()
 
   const fetchUser = (async (userId: number) => {
-    const response = await fetch(
+    const response = await retryFetch(
       new URL(`/users/${userId}`, SERVER_URL).toString()
     )
     user = await response.json()

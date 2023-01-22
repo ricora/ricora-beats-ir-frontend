@@ -1,8 +1,9 @@
 <script lang="ts">
   import MusicCard from "../components/MusicCard.svelte"
+  import { retryFetch } from "../lib/retryFetch"
 
   const fetchBeatmaps = (async () => {
-    const response = await fetch("./beatmaps/beatmaps.json")
+    const response = await retryFetch("./beatmaps/beatmaps.json")
     const responseJSON = await response.json()
     let row = []
     let col = []

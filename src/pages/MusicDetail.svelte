@@ -1,5 +1,6 @@
 <script lang="ts">
   import { getNameColor } from "../lib/nameColor"
+  import { retryFetch } from "../lib/retryFetch"
 
   export let params
 
@@ -25,7 +26,7 @@
   }
 
   const fetchBeatmap = (async () => {
-    const response = await fetch("./beatmaps/beatmaps.json")
+    const response = await retryFetch("./beatmaps/beatmaps.json")
     const responseJSON = await response.json()
     for (const music of responseJSON) {
       if (music.folder == params.folder) {
@@ -43,7 +44,7 @@
   })()
 
   const fetchUsers = (async () => {
-    const response = await fetch(new URL("/users/", SERVER_URL).toString())
+    const response = await retryFetch(new URL("/users/", SERVER_URL).toString())
     const responseJSON = await response.json()
     users = responseJSON
     for (const user of users) {
@@ -53,7 +54,7 @@
   })()
 
   const fetchRanking = async (folder, filename) => {
-    const response = await fetch(
+    const response = await retryFetch(
       new URL(
         `/scores/${encodeURIComponent(folder)}/${encodeURIComponent(
           filename
