@@ -83,8 +83,8 @@
         </div>
       {:then user}
         <div class="p-8 hero bg-base-300">
-          <div class="hero-content flex-col lg:flex-row">
-            <div>
+          <div class="hero-content flex-col md:flex-row min-w-[80%]">
+            <div class="min-w-[50%]">
               <div>
                 <span
                   class="text-4xl font-bold"
