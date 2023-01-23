@@ -22,7 +22,7 @@
       />
     </div>
   {:then users}
-    <div class="p-6 overflow-x-auto w-full">
+    <div class="p-6 overflow-x-auto">
       <table class="table w-full">
         <!-- head -->
         <thead>
@@ -37,7 +37,7 @@
         <tbody>
           {#each users as user, i}
             <tr class="hover">
-              <td>{i + 1}</td>
+              <th>{i + 1}</th>
               <td>
                 <div class="flex items-center space-x-3">
                   <div>
