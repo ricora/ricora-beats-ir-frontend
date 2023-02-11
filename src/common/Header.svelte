@@ -1,4 +1,4 @@
-<div class="navbar bg-neutral text-neutral-content bg-base-100">
+<div class="navbar bg-neutral text-neutral-content">
   <div class="flex-none">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-ghost btn-circle">
