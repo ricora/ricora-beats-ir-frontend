@@ -11,10 +11,19 @@
         Webブラウザからタッチパネルやキーボードで遊ぶ音楽ゲーム「RICORA
         Beats」とそのインターネットランキングの閲覧サイトです。
       </p>
-      <a href="#/music"> <button class="btn btn-primary">楽曲別ランキング</button></a>
-      <a href="#/ranking"><button class="btn btn-secondary">総合ランキング</button></a>
+      <a href="#/music" class="py-0.5" style="display:inline-block;"
+        ><button class="btn btn-primary">楽曲別ランキング</button></a
+      >
+      <a href="#/ranking" class="py-0.5" style="display:inline-block;"
+        ><button class="btn btn-secondary">総合ランキング</button></a
+      >
       <div class="py-3">
-        <a href="https://beats.tus-ricora.com" target="_blank" rel="noopener noreferrer"
+        <a
+          href="https://beats.tus-ricora.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="py-0.5"
+          style="display:inline-block;"
           ><button class="btn btn-neutral"
             ><div class="grid grid-flow-col gap-2 items-center">
               RICORA Beatsのプレーはこちら<svg
@@ -38,6 +47,8 @@
           href="https://github.com/RICORA/ricora-beats/wiki"
           target="_blank"
           rel="noopener noreferrer"
+          class="py-0.5"
+          style="display:inline-block;"
           ><button class="btn btn-neutral"
             ><div class="grid grid-flow-col gap-2 items-center">
               RICORA Beats Wiki<svg
