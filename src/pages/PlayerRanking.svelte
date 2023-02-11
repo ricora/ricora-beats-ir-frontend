@@ -41,10 +41,7 @@
               <td>
                 <div class="flex items-center space-x-3">
                   <div>
-                    <div
-                      class="font-bold"
-                      style="color: {getNameColor(user.performance_point)};"
-                    >
+                    <div class="font-bold" style="color: {getNameColor(user.performance_point)};">
                       <a href="#/users/{user.id}">{user.screen_name}</a>
                     </div>
                     <div class="text-sm opacity-50">ID: {user.id}</div>

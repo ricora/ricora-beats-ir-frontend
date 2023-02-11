@@ -1,6 +1,4 @@
-<footer
-  class="footer footer-center p-10 bg-neutral text-neutral-content"
->
+<footer class="footer footer-center p-10 bg-neutral text-neutral-content">
   <div>
     <span class="footer-title">Sitemaps</span>
     <a href="#/" class="link link-hover">Home</a>

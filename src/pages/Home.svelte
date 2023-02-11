@@ -11,17 +11,10 @@
         Webブラウザからタッチパネルやキーボードで遊ぶ音楽ゲーム「RICORA
         Beats」とそのインターネットランキングの閲覧サイトです。
       </p>
-      <a href="#/music">
-        <button class="btn btn-primary">楽曲別ランキング</button></a
-      >
-      <a href="#/ranking"
-        ><button class="btn btn-secondary">総合ランキング</button></a
-      >
+      <a href="#/music"> <button class="btn btn-primary">楽曲別ランキング</button></a>
+      <a href="#/ranking"><button class="btn btn-secondary">総合ランキング</button></a>
       <div class="py-3">
-        <a
-          href="https://beats.tus-ricora.com"
-          target="_blank"
-          rel="noopener noreferrer"
+        <a href="https://beats.tus-ricora.com" target="_blank" rel="noopener noreferrer"
           ><button class="btn btn-neutral"
             ><div class="grid grid-flow-col gap-2 items-center">
               RICORA Beatsのプレーはこちら<svg
@@ -97,8 +90,7 @@
           href="https://tus-ricora.com/"
           target="_blank"
           rel="noopener noreferrer"
-          class="underline hover:no-underline"
-          >東京理科大学 電子計算機研究会RICORA</a
+          class="underline hover:no-underline">東京理科大学 電子計算機研究会RICORA</a
         >の有志部員によって制作された音楽(リズム)ゲームです。より多くの人にプレーしてほしいという思想の元、導入の敷居が低い<a
           href="https://developer.mozilla.org/ja/docs/Web/Progressive_web_apps"
           target="_blank"
@@ -116,10 +108,7 @@
           class="underline hover:no-underline">プログラミング班</a
         >が主に担当しています。
       </p>
-      <a
-        href="https://github.com/RICORA/ricora-beats"
-        target="_blank"
-        rel="noopener noreferrer"
+      <a href="https://github.com/RICORA/ricora-beats" target="_blank" rel="noopener noreferrer"
         ><button class="btn btn-ghost glass"
           ><div class="grid grid-flow-col gap-2 items-center">
             <svg
@@ -148,9 +137,7 @@
     />
     <div>
       <h2 class="text-5xl font-bold text-2">幅広い難易度と充実した譜面</h2>
-      <p class="py-6 text-2">
-        難易度は4段階、レーン数は4-7の4つから選ぶことができます。
-      </p>
+      <p class="py-6 text-2">難易度は4段階、レーン数は4-7の4つから選ぶことができます。</p>
       <table>
         <tbody>
           <div class="py-2">
@@ -177,11 +164,7 @@
                 /></td
               >
               <td>
-                <img
-                  src="./assets/img/diff_icon_4.png"
-                  class="px-1 icon-shadow"
-                  alt="EXTRA"
-                /></td
+                <img src="./assets/img/diff_icon_4.png" class="px-1 icon-shadow" alt="EXTRA" /></td
               >
             </tr>
           </div>
@@ -192,32 +175,16 @@
           <div class="py-2">
             <tr>
               <td>
-                <img
-                  src="./assets/img/key_icon_4.png"
-                  class="px-1 icon-shadow"
-                  alt="4 KEYS"
-                /></td
+                <img src="./assets/img/key_icon_4.png" class="px-1 icon-shadow" alt="4 KEYS" /></td
               >
               <td>
-                <img
-                  src="./assets/img/key_icon_5.png"
-                  class="px-1 icon-shadow"
-                  alt="5 KEYS"
-                /></td
+                <img src="./assets/img/key_icon_5.png" class="px-1 icon-shadow" alt="5 KEYS" /></td
               >
               <td>
-                <img
-                  src="./assets/img/key_icon_6.png"
-                  class="px-1 icon-shadow"
-                  alt="6 KEYS"
-                /></td
+                <img src="./assets/img/key_icon_6.png" class="px-1 icon-shadow" alt="6 KEYS" /></td
               >
               <td>
-                <img
-                  src="./assets/img/key_icon_7.png"
-                  class="px-1 icon-shadow"
-                  alt="7 KEYS"
-                /></td
+                <img src="./assets/img/key_icon_7.png" class="px-1 icon-shadow" alt="7 KEYS" /></td
               >
             </tr>
           </div>

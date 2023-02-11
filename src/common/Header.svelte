@@ -15,9 +15,7 @@
           /></svg
         >
       </label>
-      <ul
-        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52"
-      >
+      <ul class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
         <li><a href="#/">Home</a></li>
         <li><a href="#/music">楽曲一覧</a></li>
         <li><a href="#/ranking">総合ランキング</a></li>
@@ -33,15 +31,10 @@
         <a href="#/music"><button class="btn btn-neutral">楽曲一覧</button></a>
       </div>
       <div>
-        <a href="#/ranking"
-          ><button class="btn btn-neutral">総合ランキング</button></a
-        >
+        <a href="#/ranking"><button class="btn btn-neutral">総合ランキング</button></a>
       </div>
       <div>
-        <a
-          href="https://beats.tus-ricora.com/"
-          target="_blank"
-          rel="noopener noreferrer"
+        <a href="https://beats.tus-ricora.com/" target="_blank" rel="noopener noreferrer"
           ><button class="btn btn-neutral"
             ><div class="grid grid-flow-col gap-2 items-center">
               RICORA Beatsで遊ぶ<svg

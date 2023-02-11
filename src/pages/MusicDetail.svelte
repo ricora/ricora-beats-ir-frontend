@@ -33,9 +33,7 @@
         selectedMusic = music
         selectedMusic["jacketURL"] = "./assets/img/no_image.png"
         if ("jacket" in selectedMusic) {
-          selectedMusic.jacketURL = encodeURIComponent(
-            `./beatmaps/${music.folder}/${music.jacket}`
-          )
+          selectedMusic.jacketURL = encodeURIComponent(`./beatmaps/${music.folder}/${music.jacket}`)
         }
         return selectedMusic
       }
@@ -56,9 +54,7 @@
   const fetchRanking = async (folder, filename) => {
     const response = await retryFetch(
       new URL(
-        `/scores/${encodeURIComponent(folder)}/${encodeURIComponent(
-          filename
-        )}/`,
+        `/scores/${encodeURIComponent(folder)}/${encodeURIComponent(filename)}/`,
         SERVER_URL
       ).toString()
     )
@@ -67,10 +63,7 @@
   }
 
   const changeBeatmap = async () => {
-    ranking = await fetchRanking(
-      selectedMusic.folder,
-      selectedMusic[selectedBeatmap].filename
-    )
+    ranking = await fetchRanking(selectedMusic.folder, selectedMusic[selectedBeatmap].filename)
     ranking.sort((a, b) => b.score - a.score)
   }
 </script>
@@ -205,12 +198,9 @@
                   <div>
                     <div
                       class="font-bold"
-                      style="color: {getNameColor(
-                        playerIdToPerformancePoint[score.player_id]
-                      )};"
+                      style="color: {getNameColor(playerIdToPerformancePoint[score.player_id])};"
                     >
-                      <a href="#/users/{score.player_id}"
-                        >{playerIdToScreenName[score.player_id]}</a
+                      <a href="#/users/{score.player_id}">{playerIdToScreenName[score.player_id]}</a
                       >
                     </div>
                     <div class="text-sm opacity-50">ID: {score.player_id}</div>

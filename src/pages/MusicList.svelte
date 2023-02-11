@@ -10,9 +10,7 @@
     for (const music of responseJSON) {
       music["jacketURL"] = "./assets/img/no_image.png"
       if ("jacket" in music) {
-        music.jacketURL = encodeURIComponent(
-          `./beatmaps/${music.folder}/${music.jacket}`
-        )
+        music.jacketURL = encodeURIComponent(`./beatmaps/${music.folder}/${music.jacket}`)
       }
       col.push(music)
       if (col.length == 3) {
@@ -25,10 +23,7 @@
       row.push([responseJSON[responseJSON.length - 1]])
     }
     if (responseJSON.length % 3 == 2) {
-      row.push([
-        responseJSON[responseJSON.length - 1 - 1],
-        responseJSON[responseJSON.length - 1],
-      ])
+      row.push([responseJSON[responseJSON.length - 1 - 1], responseJSON[responseJSON.length - 1]])
     }
     return row
   })()

@@ -53,9 +53,7 @@
   })()
 
   const fetchUser = (async (userId: number) => {
-    const response = await retryFetch(
-      new URL(`/users/${userId}`, SERVER_URL).toString()
-    )
+    const response = await retryFetch(new URL(`/users/${userId}`, SERVER_URL).toString())
     user = await response.json()
     if (!response.ok) {
       return Promise.reject(new Error("User not found."))
@@ -88,17 +86,14 @@
               <div>
                 <span
                   class="text-4xl font-bold"
-                  style="color: {getNameColor(user.performance_point)};"
-                  >{user.screen_name}</span
+                  style="color: {getNameColor(user.performance_point)};">{user.screen_name}</span
                 >
                 <span class="px-2 text-sm opacity-50">(ID: {user.id})</span>
               </div>
 
               <span class="py-3">
                 <span class="tooltip" data-tip="Performance Points">
-                  <span class="badge badge-md"
-                    >{user.performance_point} pts.</span
-                  >
+                  <span class="badge badge-md">{user.performance_point} pts.</span>
                 </span>
               </span>
             </div>
@@ -205,15 +200,13 @@
                     <div>
                       <div class="font-bold">
                         <a href="#/music/{encodeURIComponent(score.folder)}/">
-                          {fileNameToDifficulty[score.folder][score.filename]
-                            .music.title}</a
+                          {fileNameToDifficulty[score.folder][score.filename].music.title}</a
                         >
                       </div>
                       <div class="text-sm opacity-50">
                         {fileNameToDifficulty[score.folder][score.filename].key}
                         KEYS - {difficultyindexToLabel[
-                          fileNameToDifficulty[score.folder][score.filename]
-                            .difficulty
+                          fileNameToDifficulty[score.folder][score.filename].difficulty
                         ]}
                       </div>
                     </div>
